@@ -46,3 +46,9 @@ jar {
                 'Implementation-Version': 1.0
     }
 }
+
+test {
+    useJUnitPlatform()
+}
+
+compileJava {}.dependsOn(':utils:publishToMavenLocal')

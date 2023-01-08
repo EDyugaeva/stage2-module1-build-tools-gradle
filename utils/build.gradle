@@ -45,3 +45,8 @@ jar {
                 'Implementation-Version': 1.0
     }
 }
+test {
+    useJUnitPlatform()
+}
+
+publishMavenPublicationToMavenLocal {}.mustRunAfter('build')
