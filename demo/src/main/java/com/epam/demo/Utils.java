@@ -18,7 +18,7 @@ public class Utils {
             }
 
             float n = NumberUtils.createFloat(s);
-            if (n < 0) {
+            if (n <= 0) {
                 return false;
             }
         }
