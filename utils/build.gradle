@@ -44,6 +44,6 @@ jar {
     manifest {
         //provide manifest with such attributes as 'Implementation-Title', 'Implementation-Version'
         attributes 'Implementation-Title': 'StringUtils',
-        'Implementation-Version': 1.0
+                'Implementation-Version': 1.0
     }
 }

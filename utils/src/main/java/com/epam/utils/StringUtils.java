@@ -1,11 +1,13 @@
 package com.epam.utils;
+import org.apache.commons.lang3.math.NumberUtils;
 
 public class StringUtils {
     public static boolean isPositiveNumber(String str) {
-         int n =
+       if (!NumberUtils.isCreatable(str)) {
+        return false;
     }
 
-    public static void main(String[] args) {
-
-    }
+    float n = NumberUtils.createFloat(str);
+        return n > 0;
+}
 }
