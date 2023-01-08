@@ -2,13 +2,14 @@ plugins {
     // id for library
     // id for maven to publish jar to local repository
     id 'java-library'
+    id 'java'
     id 'maven-publish'
 
 }
 
 java {
 // provide sourceCompatibility
-    sourceCompatibility = '1.6'
+    sourceCompatibility = '1.8'
 }
 
 repositories {
@@ -43,7 +44,9 @@ jar {
     manifest {
         //provide manifest with such attributes as 'Implementation-Title', 'Implementation-Version'
         attributes 'Implementation-Title': 'StringUtils',
-                'Implementation-Version': 1.0
+                'Implementation-Version': 1.0,
+                'Main-Class': 'demo.StringUtils'
+
     }
 }
 
